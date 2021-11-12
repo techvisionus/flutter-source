@@ -1,3 +1,10 @@
+/*
+ * @Description: 
+ * @Autor: saphir
+ * @Date: 2021-04-27 15:55:46
+ * @LastEditors: saphir
+ * @LastEditTime: 2021-05-12 15:53:56
+ */
 // This is a basic Flutter widget test.
 //
 // To perform an interaction with a widget in your test, use the WidgetTester
@@ -6,14 +13,13 @@
 // tree, read text, and verify that the values of widget properties are correct.
 
 import 'package:flutter/material.dart';
+import 'package:flutter_my_page/my_app.dart';
 import 'package:flutter_test/flutter_test.dart';
-
-import 'package:flutter_source/main.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(const MyApp());
+    await tester.pumpWidget(MyApp());
 
     // Verify that our counter starts at 0.
     expect(find.text('0'), findsOneWidget);
